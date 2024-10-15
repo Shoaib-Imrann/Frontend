@@ -1,0 +1,78 @@
+@media (max-width: 1200px) {
+    .intro h1 {
+      font-size: 40px;
+    }
+  
+    .intro button,
+    .match button {
+      width: 120px;
+      height: 45px;
+      font-size: 18px;
+    }
+  
+    .score h2 {
+      font-size: 25px;
+    }
+  
+    .score p {
+      font-size: 20px;
+    }
+  
+    .winner {
+      font-size: 40px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .intro h1 {
+      font-size: 30px;
+    }
+  
+    .intro button,
+    .match button {
+      width: 100px;
+      height: 40px;
+      font-size: 16px;
+    }
+  
+    .score h2 {
+      font-size: 20px;
+    }
+  
+    .score p {
+      font-size: 18px;
+    }
+  
+    .winner {
+      font-size: 30px;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .intro h1 {
+      font-size: 24px;
+    }
+  
+    .intro button,
+    .match button {
+      width: 80px;
+      height: 35px;
+      font-size: 14px;
+    }
+  
+    .score h2 {
+      font-size: 18px;
+    }
+  
+    .score p {
+      font-size: 16px;
+    }
+  
+    .winner {
+      font-size: 24px;
+    }
+  
+    .hands img {
+      width: 80px;
+    }
+  }
