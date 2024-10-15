@@ -1,3 +1,3 @@
-## Here's a preview
+## Preview
 
-![Signup Form UI](preview/bg.jpg)
+![bg gen](bg.jpg)
