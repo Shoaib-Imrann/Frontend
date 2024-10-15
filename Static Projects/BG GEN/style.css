@@ -1,0 +1,58 @@
+body {
+  font-family: "Merriweather", "Noto Serif Khitan";
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, #f4489b, #00b2ff);
+}
+
+h1 {
+  font: 400 3rem "Merriweather";
+  color: rgb(0, 0, 0, 0.3);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  width: 100%;
+}
+
+h3 {
+  font: 400 1.1em "Noto Serif Khitan Small Script";
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  text-transform: none;
+  letter-spacing: 0.01em;
+}
+
+.colors {
+  display: flex;
+  gap: 20px;
+}
+
+@media (max-width: 767px) {
+  h3 {
+    display: none;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+}
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+  h1 {
+    font-size: 3em;
+  }
+}
+
+/* Desktops */
+@media (min-width: 1025px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
