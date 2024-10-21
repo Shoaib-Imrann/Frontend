@@ -1,0 +1,426 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Merriweather", "Noto Serif Khitan Small Script", "Space Grotesk";
+}
+
+body {
+  letter-spacing: 1px;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inv-line {
+  max-width: 1320px;
+  margin-inline: auto;
+  padding-inline: 20px;
+}
+
+a {
+  color: black;
+}
+
+.container1 {
+  letter-spacing: 2px;
+  padding: 20px;
+  justify-content: space-between;
+  width: 100%;
+  height: 4rem;
+  position: relative;
+}
+
+.menu {
+  display: none;
+}
+
+.pages {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  color: black;
+  width: auto;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.logo img {
+  height: 3rem;
+  object-fit: fill;
+}
+
+.select-icons {
+  width: auto;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.text-area1 {
+  font-family: "Noto Serif Khitan Small Script";
+  background-image: url("images/landing-page.jpeg");
+  background-size: cover;
+  height: 90vh;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 70px;
+  letter-spacing: 1px;
+}
+
+.landing-text {
+  width: 100%;
+  justify-content: flex-start;
+  height: auto;
+}
+
+.text1 h1 {
+  margin-top: 25px;
+  font-size: 2.7rem;
+}
+
+.text1 {
+  width: 400px;
+}
+
+.text1 p {
+  margin-top: 20px;
+  color: rgb(137, 137, 137);
+  font-size: 0.8rem;
+}
+
+.fadeIn1 {
+  animation: fadeInUp 0.8s ease-in-out;
+}
+
+.fadeIn2 {
+  animation: fadeInUp 2s ease-in-out;
+}
+
+.fadeIn3 {
+  animation: fadeInUp 2.4s ease-in-out;
+}
+
+.fadeIn4 {
+  animation: fadeInUp 2.8s ease-in-out;
+}
+
+.shopnow {
+  margin-top: 30px;
+  height: 3rem;
+  width: 10rem;
+  background-color: rgb(24, 24, 24);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 2px 2px 3px black;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.shopnow:hover {
+  /* animation: pulse 0.5s ease-in-out; */
+  transform: translateY(-5px);
+  box-shadow: 4px 4px 6px black;
+}
+
+.products-area {
+  height: 600px;
+  width: 1000px;
+}
+
+.text2 {
+  margin-top: 50px;
+  flex-direction: column;
+  gap: 15px;
+  height: 120px;
+}
+
+.text2 h1 {
+  font-size: 2rem;
+}
+
+.text2 p {
+  font-size: 0.8rem;
+  color: rgb(137, 137, 137);
+}
+
+.p1 {
+  flex-direction: column;
+  border: 0.5px solid #c0c0c0;
+  border-radius: 5px;
+  gap: 5px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.p1:hover {
+  transform: translateY(-4px);
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px black;
+}
+
+.p1-text {
+  flex-direction: column;
+  padding: 5px;
+  gap: 5px;
+  margin-bottom: 15px;
+}
+
+.p1 img {
+  height: 20rem;
+  padding: 20px;
+  border-radius: 23px;
+}
+
+.p1 h4 {
+  font-family: "serif";
+}
+
+.products {
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.img1 {
+  background-image: url("images/showcase-1.jpeg");
+  background-size: cover;
+  width: 580px;
+  height: 22rem;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.img2 {
+  background-image: url("images/showcase-2.jpeg");
+  background-size: cover;
+  width: 580px;
+  height: 22rem;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+.showcase-images {
+  height: 500px;
+  gap: 20px;
+}
+
+.text4 {
+  flex-direction: column;
+  height: auto;
+  align-items: flex-start;
+  margin-top: 40px;
+  padding-left: 20px;
+}
+
+.text4 h1 {
+  font-size: 1.4rem;
+  margin-top: 20px;
+}
+
+.text4 p {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #888c90;
+}
+
+.Explore {
+  margin-top: 8px;
+  height: 2.5rem;
+  width: 8rem;
+  font-size: 0.8rem;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  box-shadow: 1px 1px 2px black;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.Explore:hover {
+  transform: translateY(-2px);
+  box-shadow: 3px 3px 4px black;
+}
+
+.text5 {
+  flex-direction: column;
+  height: auto;
+  align-items: flex-end;
+  margin-top: 40px;
+  padding-right: 20px;
+}
+
+.text5 h1 {
+  font-family: "Times";
+  font-size: 1.4rem;
+}
+
+.text5 p {
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-top: 10px;
+  color: #6d6f71;
+}
+
+.reviews {
+  width: 100%;
+  height: 200px;
+}
+
+.review1 {
+  width: 380px;
+  flex-direction: column;
+  text-align: center;
+}
+
+.review1 img {
+  object-fit: cover;
+  width: 220px;
+  height: 120px;
+}
+
+.review1 p {
+  margin-top: 20px;
+  font-size: 0.8rem;
+  width: 280px;
+  letter-spacing: 1px;
+  font-family: "Georgia";
+  line-height: 18px;
+}
+
+.social {
+  height: 400px;
+  gap: 30px;
+  flex-direction: column;
+}
+
+.service1 {
+  flex-direction: column;
+  gap: 20px;
+}
+
+.service1 i {
+  font-size: 3rem;
+}
+
+.service1 i:hover {
+  animation: rotateIn 1s ease-in-out;
+}
+
+/* .rotateIn{
+    animation: rotateIn 1s ease-in-out;
+} */
+
+.text3 {
+  gap: 10px;
+  flex-direction: column;
+}
+
+.service-all {
+  max-width: 1100px;
+  margin-inline: auto;
+  height: 380px;
+  justify-content: space-between;
+}
+
+.service-all p {
+  font-size: 0.8rem;
+  color: rgb(137, 137, 137);
+}
+
+.cta-text {
+  color: white !important;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+  height: 100%;
+  justify-content: center;
+}
+
+.cta-text h1 {
+  width: 600px;
+  font-size: 1.5rem;
+}
+
+.cta {
+  min-height: 400px;
+}
+
+.cta-btn {
+  width: 10rem;
+  height: 3rem;
+  background-color: #2085d2;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.ov-container7 {
+  height: 480px;
+  max-width: 1100px;
+  padding-top: 100px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.ov-container7 img {
+  width: 250px;
+}
+
+.link-column {
+  flex-direction: column;
+  margin-top: 10px;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.link-column h1 {
+  font-size: 1.4rem;
+}
+
+.ov-container8 a {
+  color: black !important;
+}
+
+.ov-container8 {
+  justify-content: center;
+  gap: 30px;
+}
+
+.sub-footer {
+  background-color: #b9cde4;
+  padding: 15px;
+  margin-inline: auto;
+}
+
+.ov-container7 h1 {
+  font-family: "Space Grotesk";
+  font-weight: 700;
+}
+
+.hover-link {
+  font-family: "Space Grotesk";
+  transition: transform 0.2s ease-in-out;
+}
+
+.hover-link:hover {
+  color: #0e5bd7 !important;
+  transform: translateY(-2px);
+}
+
+.social-icon {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+}

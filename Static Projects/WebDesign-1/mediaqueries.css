@@ -1,0 +1,563 @@
+@media (max-width: 1200px) {
+  .container1 .pages {
+    font-size: 0.7rem;
+  }
+
+  .container1 i {
+    font-size: 1rem;
+  }
+
+  .text-area1 {
+    height: 90vh;
+    padding-left: 20px;
+  }
+
+  .text1 h1 {
+    font-size: 1.7rem;
+  }
+
+  .text1 p {
+    font-size: 0.7rem;
+    margin-top: 13px;
+  }
+
+  .text1 h4 {
+    font-size: 0.8rem;
+  }
+
+  .shopnow {
+    width: 7rem;
+    height: 2.5rem;
+    font-size: 0.8rem;
+  }
+
+  .text2 h1 {
+    font-size: 1.5rem;
+  }
+
+  .text2 p {
+    font-size: 0.6rem;
+  }
+
+  .products {
+    margin-top: 0;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: auto;
+    width: 750px;
+    margin-inline: auto;
+    align-items: center;
+    gap: 30px;
+    padding: 0 20px;
+  }
+
+  .products-area {
+    height: auto;
+    width: auto;
+  }
+
+  .p1 img {
+    height: 16rem;
+  }
+
+  .p1 h4,
+  .p1 p,
+  .p1 i {
+    font-size: 0.9rem;
+  }
+
+  .img1,
+  .img2 {
+    background-size: fill;
+    width: 86%;
+    height: 450px;
+  }
+
+  .showcase-images {
+    flex-direction: column;
+    padding: 50px 20px;
+    width: 800px;
+    height: 800px;
+  }
+
+  .text4 h1,
+  .text5 h1 {
+    font-size: 1.2rem;
+  }
+
+  .Explore {
+    height: 2rem;
+    width: 6rem;
+    font-size: 0.6rem;
+  }
+
+  .review1 {
+    flex-direction: column;
+  }
+
+  .review1 img {
+    object-fit: cover;
+    width: 160px;
+    height: 80px;
+  }
+
+  .review1 p {
+    margin-top: 20px;
+    font-size: 0.6rem;
+    width: 200px;
+    letter-spacing: 1px;
+    line-height: 15px;
+    font-family: "Georgia";
+  }
+
+  .social {
+    height: 350px;
+    width: 800px;
+    padding: 0 20px;
+  }
+
+  .service-all {
+    height: 300px;
+    justify-content: space-between;
+    padding: 0 20px;
+    width: 800px;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .service-all i {
+    font-size: 2rem;
+  }
+
+  .service-all h4 {
+    font-size: 0.8rem;
+  }
+
+  .service-all p {
+    font-size: 0.6rem;
+  }
+
+  .cta-text {
+    width: 800px;
+  }
+
+  .cta-text h1 {
+    font-size: 1.2rem;
+    width: 700px;
+    padding: 0 20px;
+  }
+
+  .ov-container7 {
+    padding-left: 30px;
+    padding-right: 30px;
+    justify-content: space-between;
+    height: 420px;
+  }
+
+  .ov-container7 img {
+    width: 180px;
+  }
+
+  .link-column h1 {
+    font-size: 1.4rem;
+  }
+
+  .hover-link {
+    font-size: 0.9rem;
+  }
+  .ov-container8 {
+    gap: 20px;
+  }
+}
+
+/* tablets */
+@media (max-width: 768px) {
+  .menu {
+    display: block;
+    position: relative;
+    z-index: 1000;
+  }
+
+  .pages.active {
+    left: 0;
+  }
+
+  .pages {
+    flex-direction: column;
+    position: absolute;
+    background-color: white;
+    left: -100%;
+    top: 100%;
+    width: 100%;
+    height: 180px;
+    padding-block: 20px;
+    transition: 0.2s ease-in-out;
+  }
+
+  .select-icons {
+    align-items: flex-end;
+  }
+
+  .text-area1 {
+    height: 78vh;
+    padding-left: 15px;
+  }
+
+  .text1 {
+    width: 260px;
+  }
+
+  .text1 h1 {
+    font-size: 1.4rem;
+    /* margin-top: 0; */
+  }
+
+  .text1 p {
+    font-size: 0.5rem;
+    margin-top: 13px;
+  }
+
+  .text1 h4 {
+    font-size: 0.7rem;
+  }
+
+  .shopnow {
+    width: 6rem;
+    height: 2.4rem;
+    font-size: 0.7rem;
+  }
+
+  .products {
+    margin-top: 0;
+    width: 600px;
+    flex-wrap: wrap;
+    height: auto;
+  }
+
+  .p1 img {
+    height: 15rem;
+  }
+
+  .p1 h4,
+  .p1 p,
+  .p1 i {
+    font-size: 0.8rem;
+  }
+
+  .text2 h1 {
+    font-size: 1.5rem;
+  }
+
+  .text2 p {
+    font-size: 0.6rem;
+  }
+
+  .img1,
+  .img2 {
+    background-size: fill;
+    width: 86%;
+    height: 450px;
+    opacity: 0.9;
+  }
+
+  .showcase-images {
+    flex-direction: column;
+    padding: 50px 20px;
+    margin-inline: 0;
+    width: 700px;
+    height: 800px;
+  }
+
+  .text4,
+  .text5 {
+    margin-top: 20px;
+  }
+
+  .text4 h1,
+  .text5 h1 {
+    font-size: 1.2rem;
+  }
+
+  .Explore {
+    height: 2rem;
+    width: 6rem;
+    font-size: 0.6rem;
+  }
+
+  .reviews {
+    flex-direction: column;
+    height: auto;
+    width: 50%;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .review1 img {
+    object-fit: cover;
+    width: 140px;
+    height: 60px;
+  }
+
+  .review1 {
+    width: auto;
+    margin-bottom: 20px;
+  }
+
+  .review1 p {
+    margin-top: 8px;
+    width: 180px;
+  }
+
+  .social {
+    width: auto;
+    height: auto;
+    padding: 30px 20px 30px 20px;
+  }
+
+  .social h1 {
+    font-size: 1.4rem;
+  }
+
+  .service-all {
+    flex-wrap: wrap;
+    height: 300px;
+    justify-content: space-around;
+    padding: 30px 10px;
+    width: 500px;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .service-all i {
+    font-size: 2rem;
+  }
+
+  .service-all h4 {
+    font-size: 0.8rem;
+  }
+
+  .service-all p {
+    font-size: 0.6rem;
+  }
+
+  .cta {
+    min-height: 300px;
+  }
+
+  .cta-text {
+    width: 600px;
+  }
+
+  .cta-text h1 {
+    font-size: 1.2rem;
+    width: 600px;
+    padding: 0 20px;
+  }
+
+  .ov-container7 {
+    justify-content: space-between;
+    height: 420px;
+  }
+
+  .ov-container7 img {
+    width: 120px;
+  }
+
+  .link-column h1 {
+    font-size: 1.3rem;
+  }
+
+  .hover-link {
+    font-size: 0.8rem;
+  }
+
+  .ov-container8 {
+    gap: 20px;
+  }
+}
+
+/* mobile devices */
+@media (max-width: 560px) {
+  .container1 {
+    padding: 5px;
+    flex-direction: row-reverse;
+    padding-inline: 15px;
+  }
+
+  .select-icons {
+    display: none;
+  }
+
+  .text-area1 {
+    height: 85vh;
+    background-position: center center;
+    padding-left: 0;
+  }
+
+  .text1 {
+    width: 220px;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 85vh;
+    width: 100%;
+    padding: 20px;
+    /* border-radius: 10px;  */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .text1 h1 {
+    font-size: 1rem;
+    margin-top: 15px;
+    width: 80%;
+  }
+
+  .text1 h1,
+  .text1 h4 {
+    color: #fff;
+  }
+
+  .text1 p {
+    display: none;
+  }
+
+  .landing-text {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .shopnow {
+    height: 2.3rem;
+    color: black;
+    background-color: white;
+    width: 6.6rem;
+    margin-top: 15px;
+    font-size: 0.7rem;
+  }
+
+  .text2 h1 {
+    font-size: 1.2rem;
+  }
+
+  .text2 p {
+    font-size: 0.5rem;
+  }
+
+  .products {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .p1 img {
+    height: 13rem;
+  }
+
+  .showcase-images {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+
+  .img1,
+  .img2 {
+    width: 100%;
+    height: 13rem;
+  }
+
+  .text4,
+  .text5 {
+    margin-top: 10px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .text4 h1,
+  .text5 h1 {
+    font-size: 0.8rem;
+    margin-top: 5px;
+  }
+
+  .text4 p,
+  .text5 p {
+    font-size: 0.5rem;
+    margin-top: 5px;
+  }
+
+  .Explore {
+    height: 1.7rem;
+    width: 5rem;
+    font-size: 0.5rem;
+  }
+
+  .social {
+    height: auto;
+    gap: 50px;
+  }
+
+  .social h1 {
+    font-size: 1rem;
+  }
+
+  .service-all {
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    gap: 60px;
+    padding: 50px 10px 50px 10px;
+  }
+
+  .cta-text h1 {
+    font-size: 0.9rem;
+    width: 100%;
+  }
+
+  .cta-btn {
+    width: 10rem;
+    height: 2.5rem;
+    background-color: #2085d2;
+    color: white;
+    font-weight: bold;
+    font-size: 0.8rem;
+  }
+
+  .ov-container7 img {
+    width: 200px;
+  }
+
+  .ov-container7 {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 30px 50px 30px;
+    gap: 20px;
+    height: auto;
+  }
+
+  .link-column h1 {
+    font-family: "Merriweather";
+    align-items: center;
+    font-size: 1.5rem;
+  }
+
+  .link-column a {
+    font-size: 0.8rem;
+  }
+
+  .link-column {
+    align-items: center;
+  }
+
+  .ov-container8 {
+    gap: 20px;
+    flex-direction: column;
+  }
+
+  .social-icon {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+  }
+}
