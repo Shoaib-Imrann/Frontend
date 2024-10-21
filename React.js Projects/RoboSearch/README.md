@@ -1,16 +1,13 @@
-# Robo-Search
 
 A simple React app that displays a list of robots fetched from an API, with a search feature to filter robots by name.
 
-- Fetches and displays robot users.
-- Real-time search.
 
-### Installation
+### To view it in yours
 
 1. Navigate to the Project Directory:
 
     ```bash
-    cd "mini-projects(React)/robo-search"
+    cd React.js\ Projects/robosearch
 
 2. Install Dependencies
 
@@ -22,7 +19,7 @@ A simple React app that displays a list of robots fetched from an API, with a se
     ```bash
     npm start
 
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Open [http://localhost:3000](http://localhost:3000)
 
 
 ## Built With
