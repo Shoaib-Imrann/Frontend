@@ -1,8 +1,5 @@
-# Layers
 
-Built with React and Tailwind CSS to manage and interact with various types of documents and files.
-
-Visit the site - https://layers-lovat.vercel.app
+React and Tailwind CSS to manage and interact with various types of documents and files.
 
 - Integrated **Framer Motion** for smooth animations.
 - Visual tags that indicate the status of each file.
@@ -12,7 +9,7 @@ Visit the site - https://layers-lovat.vercel.app
 1. **Navigate to the Project Directory:**
 
     ```bash
-    cd "mini-projects(React)/layers"
+    cd React.js\ Projects/mdocs
     ```
 
 2. **Install Dependencies:**
@@ -27,9 +24,7 @@ Visit the site - https://layers-lovat.vercel.app
     npm start
     ```
 
-    Open [http://localhost:3000](http://localhost:3000) to view the application in your browser.
-
-## Preview
+    Open [http://localhost:3000](http://localhost:3000)
 
 ![Demo](./src/preview.gif)
 
