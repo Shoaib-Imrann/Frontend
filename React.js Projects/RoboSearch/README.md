@@ -2,7 +2,7 @@
 A simple React app that displays a list of robots fetched from an API, with a search feature to filter robots by name.
 
 
-### To view it in yours
+### Installation
 
 1. Navigate to the Project Directory:
 
@@ -19,11 +19,8 @@ A simple React app that displays a list of robots fetched from an API, with a se
     ```bash
     npm start
 
-Open [http://localhost:3000](http://localhost:3000)
+Open `http://localhost:3000`
 
 
 ## Built With
-
-- React
-- Tachyons
-- JSONPlaceholder API
+`React` `Tachyons` `JSONPlaceholder API`
