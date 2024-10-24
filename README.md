@@ -12,8 +12,9 @@
     cd frontend
     ```
 
-3. **For React Projects**  
-   Refer to the `README.md` in the specific React project for setup instructions.
+3. **For React Projects**
+   <br>
+   Refer to the `README.md` in React projects 
 
 ## Details 
 - All projects are fully responsive across various devices and screen sizes.
