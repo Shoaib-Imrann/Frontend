@@ -1,3 +1,3 @@
-## Preview
+`Preview`
 
 ![bg gen](bg.jpg)
