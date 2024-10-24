@@ -1,3 +1,3 @@
-## Preview
+`Preview`
 
 ![rps](rps.jpg)
