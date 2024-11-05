@@ -1,3 +1,3 @@
 `Preview`
 
-![rps](rps.jpg)
+![GIF](./rps.gif)
