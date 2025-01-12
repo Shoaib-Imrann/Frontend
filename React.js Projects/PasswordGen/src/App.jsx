@@ -19,7 +19,7 @@ export default function App() {
     if (charAllowed) str += "!@#$%^&*()_+~`|}";
 
     for (let i = 1; i <= length; i++) {
-      const char = Math.floor(Math.random() * str.length);
+      const char = window.crypto.getRandomValues(new Uint32Array(1))[0] % str.length;
       pass += str.charAt(char);
     }
     setPassword(pass);
@@ -56,7 +56,7 @@ export default function App() {
      
       <div className="w-full max-w-sm md:max-w-[26rem] mx-auto p-6 bg-white rounded-xl shadow-lg space-y-9 ">
       <h1 className=" tracking-wide mb-5 text-2xl font-semibold text-center text-zinc-950 uppercase">
-        Password gen
+        Password Generator
       </h1>
         <div className="space-y-8">
           <div className="flex items-center space-x-2">
@@ -76,7 +76,7 @@ export default function App() {
             </button>
           </div>
 
-          <div className="space-y-4 ">
+          <div className="space-y-5 ">
             <div className="flex items-center justify-between">
               <span className="text-sm font-medium">Length: {length}</span>
             </div>
