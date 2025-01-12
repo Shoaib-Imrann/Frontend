@@ -52,9 +52,8 @@ export default function App() {
           },
         }}
       />
-    
-    <div className="min-h-screen flex items-center justify-center bg-[#fafafa] relative z-10">
-      <h1 className="absolute top-[15%] tracking-wide right-0 left-0 text-4xl font-semibold font-sans text-center text-gray-400">
+    <div className="min-h-screen flex flex-col items-center justify-center bg-[#fafafa] z-10">
+      <h1 className=" tracking-wide mb-5 text-4xl font-semibold font-sans text-center text-gray-400">
         PASSWORD GEN
       </h1>
       <div className="w-full max-w-[23rem] mx-auto p-6 bg-white rounded-xl shadow-lg space-y-9 ">
