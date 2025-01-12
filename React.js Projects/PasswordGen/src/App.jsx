@@ -19,7 +19,8 @@ export default function App() {
     if (charAllowed) str += "!@#$%^&*()_+~`|}";
 
     for (let i = 1; i <= length; i++) {
-      const char = window.crypto.getRandomValues(new Uint32Array(1))[0] % str.length;
+      const char =
+        window.crypto.getRandomValues(new Uint32Array(1))[0] % str.length;
       pass += str.charAt(char);
     }
     setPassword(pass);
@@ -31,7 +32,7 @@ export default function App() {
 
   const copyPasswordToClipboard = () => {
     window.navigator.clipboard.writeText(password);
-    toast.success('Copied')
+    toast.success("Copied");
     // passwordRef.current?.select();
     setIsCopied(true);
     setTimeout(() => setIsCopied(false), 2000);
@@ -42,7 +43,7 @@ export default function App() {
 
   return (
     <>
-    <Toaster
+      <Toaster
         position="top-right"
         reverseOrder={false}
         toastOptions={{
@@ -52,97 +53,98 @@ export default function App() {
           },
         }}
       />
-    <div className="min-h-screen flex flex-col items-center justify-center bg-[#fafafa] z-10">
-     
-      <div className="w-full max-w-sm md:max-w-[26rem] mx-auto p-6 bg-white rounded-xl shadow-lg space-y-9 ">
-      <h1 className=" tracking-wide mb-5 text-2xl font-semibold text-center text-zinc-950 uppercase">
-        Password Generator
-      </h1>
-        <div className="space-y-8">
-          <div className="flex items-center space-x-2">
-            <input
-              type="text"
-              value={password}
-              className="flex-grow pl-4 pr-1 py-[11px] bg-white border rounded-lg font-mono text-base focus:outline-none"
-              placeholder="Generated Password"
-              readOnly
-              ref={passwordRef}
-            />
-            <button
-              onClick={copyPasswordToClipboard}
-              className="py-4 px-3.5 bg-black text-white rounded-lg hover:bg-gray-800 transition-colors"
-            >
-              {isCopied ? <Check size={17} /> : <Copy size={17} />}
-            </button>
-          </div>
-
-          <div className="space-y-5 ">
-            <div className="flex items-center justify-between">
-              <span className="text-sm font-medium">Length: {length}</span>
+      <div className="shadow-sm py-3 bg-zinc-900 fixed top-0 left-0 w-full z-10">
+        <h1 className="tracking-wide text-2xl font-semibold text-center text-white uppercase">
+          Password Gen
+        </h1>
+      </div>
+      <div className="h-screen flex flex-col items-center justify-center bg-[#fafafa]">
+        <div className="w-full max-w-sm md:max-w-[26rem] mx-auto px-6 pb-6 pt-8 bg-white rounded-2xl shadow-lg space-y-9 ">
+          <div className="space-y-8">
+            <div className="flex items-center space-x-2">
+              <input
+                type="text"
+                value={password}
+                className="flex-grow pl-4 pr-1 py-[11px] bg-white border rounded-lg font-mono text-base focus:outline-none"
+                placeholder="Generated Password"
+                readOnly
+                ref={passwordRef}
+              />
+              <button
+                onClick={copyPasswordToClipboard}
+                className="py-4 px-3.5 bg-black text-white rounded-lg hover:bg-gray-800 transition-colors"
+              >
+                {isCopied ? <Check size={17} /> : <Copy size={17} />}
+              </button>
             </div>
-            <div className="flex items-center space-x-4 mb-8">
-              {/* <button
+
+            <div className="space-y-5 ">
+              <div className="flex items-center justify-between">
+                <span className="text-sm font-medium">Length: {length}</span>
+              </div>
+              <div className="flex items-center space-x-4 mb-8">
+                {/* <button
                 onClick={decrementLength}
                 className="p-1 bg-gray-200 rounded-full hover:bg-gray-300 transition-colors"
               >
                 <Minus size={16} />
               </button> */}
-              <input
-                type="range"
-                min={8}
-                max={30}
-                value={length}
-                onChange={(e) => setLength(Number(e.target.value))}
-                className="w-full h-[6px] bg-gray-200 rounded-lg appearance-none cursor-pointer"
-                style={{
-                  background: `linear-gradient(to right, #000 0%, #000 ${
-                    ((length - 7) * 100) / 24
-                  }%, #e5e7eb ${((length - 7) * 100) / 24}%, #e5e7eb 100%)`,
-                }}
-              />
-              {/* <button
+                <input
+                  type="range"
+                  min={8}
+                  max={30}
+                  value={length}
+                  onChange={(e) => setLength(Number(e.target.value))}
+                  className="w-full h-[6px] bg-gray-200 rounded-lg appearance-none cursor-pointer"
+                  style={{
+                    background: `linear-gradient(to right, #000 0%, #000 ${
+                      ((length - 7) * 100) / 24
+                    }%, #e5e7eb ${((length - 7) * 100) / 24}%, #e5e7eb 100%)`,
+                  }}
+                />
+                {/* <button
                 onClick={incrementLength}
                 className="p-1 bg-gray-200 rounded-full hover:bg-gray-300 transition-colors"
               >
                 <Plus size={16} />
               </button> */}
-            </div>
-            <div className="flex items-center justify-between">
-              <span className="text-sm font-medium">Include Numbers</span>
-              <label className="relative inline-flex items-center cursor-pointer">
-                <input
-                  type="checkbox"
-                  checked={numberAllowed}
-                  onChange={() => setNumberAllowed((prev) => !prev)}
-                  className="sr-only peer"
-                />
-                <div className="w-11 h-6 bg-gray-200 rounded-full peer peer-checked:after:translate-x-full peer-checked:bg-black after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all"></div>
-              </label>
-            </div>
+              </div>
+              <div className="flex items-center justify-between">
+                <span className="text-sm font-medium">Include Numbers</span>
+                <label className="relative inline-flex items-center cursor-pointer">
+                  <input
+                    type="checkbox"
+                    checked={numberAllowed}
+                    onChange={() => setNumberAllowed((prev) => !prev)}
+                    className="sr-only peer"
+                  />
+                  <div className="w-11 h-6 bg-gray-200 rounded-full peer peer-checked:after:translate-x-full peer-checked:bg-black after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all"></div>
+                </label>
+              </div>
 
-            <div className="flex items-center justify-between">
-              <span className="text-sm font-medium">Include Symbols</span>
-              <label className="relative inline-flex items-center cursor-pointer">
-                <input
-                  type="checkbox"
-                  checked={charAllowed}
-                  onChange={() => setCharAllowed((prev) => !prev)}
-                  className="sr-only peer"
-                />
-                <div className="w-11 h-6 bg-gray-200 rounded-full peer peer-checked:after:translate-x-full peer-checked:bg-black after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all"></div>
-              </label>
+              <div className="flex items-center justify-between">
+                <span className="text-sm font-medium">Include Symbols</span>
+                <label className="relative inline-flex items-center cursor-pointer">
+                  <input
+                    type="checkbox"
+                    checked={charAllowed}
+                    onChange={() => setCharAllowed((prev) => !prev)}
+                    className="sr-only peer"
+                  />
+                  <div className="w-11 h-6 bg-gray-200 rounded-full peer peer-checked:after:translate-x-full peer-checked:bg-black after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all"></div>
+                </label>
+              </div>
             </div>
           </div>
+          <button
+            onClick={generatePassword}
+            className="w-full flex justify-center items-center px-3 h-[45px] bg-zinc-950 text-white rounded-xl text-sm font-medium hover:bg-gray-800 transition-colors"
+          >
+            <RotateCcw size={16} className="mr-2" />
+            Regenerate
+          </button>
         </div>
-        <button
-          onClick={generatePassword}
-          className="w-full flex justify-center items-center px-3 h-[45px] bg-zinc-950 text-white rounded-lg text-sm font-medium hover:bg-gray-800 transition-colors"
-        >
-          <RotateCcw size={16} className="mr-2" />
-          Regenerate
-        </button>
       </div>
-    </div>
     </>
   );
 }
