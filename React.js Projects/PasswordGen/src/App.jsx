@@ -53,16 +53,17 @@ export default function App() {
         }}
       />
     <div className="min-h-screen flex flex-col items-center justify-center bg-[#fafafa] z-10">
-      <h1 className=" tracking-wide mb-5 text-4xl font-semibold font-sans text-center text-gray-400">
-        PASSWORD GEN
+     
+      <div className="w-full max-w-sm md:max-w-[26rem] mx-auto p-6 bg-white rounded-xl shadow-lg space-y-9 ">
+      <h1 className=" tracking-wide mb-5 text-2xl font-semibold text-center text-zinc-950 uppercase">
+        Password gen
       </h1>
-      <div className="w-full max-w-[23rem] mx-auto p-6 bg-white rounded-xl shadow-lg space-y-9 ">
-        <div className="space-y-6">
+        <div className="space-y-8">
           <div className="flex items-center space-x-2">
             <input
               type="text"
               value={password}
-              className="flex-grow px-4 py-[11px] bg-white border rounded-lg font-mono text-base focus:outline-none"
+              className="flex-grow pl-4 pr-1 py-[11px] bg-white border rounded-lg font-mono text-base focus:outline-none"
               placeholder="Generated Password"
               readOnly
               ref={passwordRef}
@@ -75,7 +76,7 @@ export default function App() {
             </button>
           </div>
 
-          <div className="space-y-4">
+          <div className="space-y-4 ">
             <div className="flex items-center justify-between">
               <span className="text-sm font-medium">Length: {length}</span>
             </div>
