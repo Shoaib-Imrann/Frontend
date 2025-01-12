@@ -1,5 +1,6 @@
 import { useState, useCallback, useEffect, useRef } from "react";
 import { Copy, RotateCcw, Check, Plus, Minus } from "lucide-react";
+import { Toaster, toast } from "react-hot-toast";
 
 export default function App() {
   const [length, setLength] = useState(12);
@@ -30,17 +31,30 @@ export default function App() {
 
   const copyPasswordToClipboard = () => {
     window.navigator.clipboard.writeText(password);
-    passwordRef.current?.select();
+    toast.success('Copied')
+    // passwordRef.current?.select();
     setIsCopied(true);
     setTimeout(() => setIsCopied(false), 2000);
   };
 
-  const incrementLength = () => setLength((prev) => Math.min(prev + 1, 30));
-  const decrementLength = () => setLength((prev) => Math.max(prev - 1, 8));
+  // const incrementLength = () => setLength((prev) => Math.min(prev + 1, 30));
+  // const decrementLength = () => setLength((prev) => Math.max(prev - 1, 8));
 
   return (
+    <>
+    <Toaster
+        position="top-right"
+        reverseOrder={false}
+        toastOptions={{
+          style: {
+            backgroundColor: "#333",
+            color: "#fff",
+          },
+        }}
+      />
+    
     <div className="min-h-screen flex items-center justify-center bg-[#fafafa] relative z-10">
-      <h1 className="absolute top-[20%] tracking-wide right-0 left-0 text-4xl font-semibold font-sans text-center text-gray-400">
+      <h1 className="absolute top-[15%] tracking-wide right-0 left-0 text-4xl font-semibold font-sans text-center text-gray-400">
         PASSWORD GEN
       </h1>
       <div className="w-full max-w-[23rem] mx-auto p-6 bg-white rounded-xl shadow-lg space-y-9 ">
@@ -67,12 +81,12 @@ export default function App() {
               <span className="text-sm font-medium">Length: {length}</span>
             </div>
             <div className="flex items-center space-x-4 mb-8">
-              <button
+              {/* <button
                 onClick={decrementLength}
                 className="p-1 bg-gray-200 rounded-full hover:bg-gray-300 transition-colors"
               >
                 <Minus size={16} />
-              </button>
+              </button> */}
               <input
                 type="range"
                 min={8}
@@ -86,12 +100,12 @@ export default function App() {
                   }%, #e5e7eb ${((length - 7) * 100) / 24}%, #e5e7eb 100%)`,
                 }}
               />
-              <button
+              {/* <button
                 onClick={incrementLength}
                 className="p-1 bg-gray-200 rounded-full hover:bg-gray-300 transition-colors"
               >
                 <Plus size={16} />
-              </button>
+              </button> */}
             </div>
             <div className="flex items-center justify-between">
               <span className="text-sm font-medium">Include Numbers</span>
@@ -129,5 +143,6 @@ export default function App() {
         </button>
       </div>
     </div>
+    </>
   );
 }
