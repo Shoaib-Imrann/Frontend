@@ -44,7 +44,7 @@ export default function App() {
   return (
     <>
       <Toaster
-        position="top-right"
+        position="top-center"
         reverseOrder={false}
         toastOptions={{
           style: {
@@ -53,13 +53,19 @@ export default function App() {
           },
         }}
       />
-      <div className="shadow-sm py-3  fixed top-0 left-0 w-full bg-white z-10">
+      {/* <div className="shadow-sm py-3  fixed top-0 left-0 w-full bg-white z-10">
         <h1 className="tracking-wide text-2xl font-semibold text-center uppercase text-zinc-950">
           Password Gen
         </h1>
-      </div>
+      </div> */}
       <div className="h-screen flex flex-col items-center justify-center bg-[#fafafa]">
-        <div className="w-full max-w-sm md:max-w-[26rem] mx-auto px-6 pb-6 pt-8 bg-white rounded-2xl shadow-lg space-y-9 ">
+        <h1 className="hidden md:block absolute top-5 tracking-wide right-0 left-0 text-4xl font-semibold font-sans text-center text-gray-400">
+          PASSWORD GEN
+        </h1>
+        <div className="w-full max-w-sm md:max-w-[26rem] mx-auto px-6 pb-6 pt-6 md:pt-8 bg-white rounded-2xl shadow-lg space-y-9 ">
+          <h1 className="md:hidden tracking-wide text-2xl font-semibold text-center uppercase text-[#212121]">
+            Password Gen
+          </h1>
           <div className="space-y-8">
             <div className="flex items-center space-x-2">
               <input
@@ -72,7 +78,7 @@ export default function App() {
               />
               <button
                 onClick={copyPasswordToClipboard}
-                className="py-4 px-3.5 bg-black text-white rounded-lg hover:bg-gray-800 transition-colors"
+                className="py-4 px-3.5 bg-[#212121] text-white rounded-lg hover:bg-zinc-950 transition-colors"
               >
                 {isCopied ? <Check size={17} /> : <Copy size={17} />}
               </button>
@@ -118,7 +124,7 @@ export default function App() {
                     onChange={() => setNumberAllowed((prev) => !prev)}
                     className="sr-only peer"
                   />
-                  <div className="w-11 h-6 bg-gray-200 rounded-full peer peer-checked:after:translate-x-full peer-checked:bg-black after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all"></div>
+                  <div className="w-11 h-6 bg-gray-200 rounded-full peer peer-checked:after:translate-x-full peer-checked:bg-[#212121] after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all"></div>
                 </label>
               </div>
 
@@ -131,16 +137,16 @@ export default function App() {
                     onChange={() => setCharAllowed((prev) => !prev)}
                     className="sr-only peer"
                   />
-                  <div className="w-11 h-6 bg-gray-200 rounded-full peer peer-checked:after:translate-x-full peer-checked:bg-black after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all"></div>
+                  <div className="w-11 h-6 bg-gray-200 rounded-full peer peer-checked:after:translate-x-full peer-checked:bg-[#212121] after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all"></div>
                 </label>
               </div>
             </div>
           </div>
           <button
             onClick={generatePassword}
-            className="w-full flex justify-center items-center px-3 h-[45px] bg-zinc-950 text-white rounded-xl text-sm font-medium hover:bg-gray-800 transition-colors"
+            className="w-full flex justify-center items-center px-3 h-[45px] bg-[#212121] text-white rounded-xl text-sm font-medium hover:bg-zinc-950 transition-colors"
           >
-            <RotateCcw size={16} className="mr-2" />
+            <RotateCcw size={16} className="mr-2 " />
             Regenerate
           </button>
         </div>
