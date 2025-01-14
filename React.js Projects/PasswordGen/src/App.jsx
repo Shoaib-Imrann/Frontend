@@ -71,7 +71,7 @@ export default function App() {
               <input
                 type="text"
                 value={password}
-                className="flex-grow pl-4 pr-1 py-[11px] bg-white border rounded-lg font-mono text-base focus:outline-none"
+                className="flex-grow pl-4 pr-1 py-[11px] bg-gray-50 border rounded-lg font-mono text-base focus:outline-none"
                 placeholder="Generated Password"
                 readOnly
                 ref={passwordRef}
